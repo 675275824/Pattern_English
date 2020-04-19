@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/recommend_buttom"
+        android:title="@string/recommend_text"
+        android:icon="@drawable/recommend"/>
+    <item
+        android:id="@+id/word_buttom"
+        android:title="@string/word_text"
+        android:icon="@drawable/word"/>
+    <item
+        android:id="@+id/hear_buttom"
+        android:title="@string/hear_text"
+        android:icon="@drawable/hear"/>
+    <item
+        android:id="@+id/pk_buttom"
+        android:title="@string/pk_text"
+        android:icon="@drawable/pk"/>
+    <item
+        android:id="@+id/pet_buttom"
+        android:title="@string/pet_text"
+        android:icon="@drawable/pet"/>
+</menu>

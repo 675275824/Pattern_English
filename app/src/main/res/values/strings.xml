@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Pattern_English</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="recommend_text">今日推荐</string>
+    <string name="word_text">单词广场</string>
+    <string name="hear_text">听力循环</string>
+    <string name="pk_text">挑战自我</string>
+    <string name="pet_text">精灵之家</string>
+    <string name="recommend_item1">热门推荐</string>
+    <string name="recommend_item2">四六级考研</string>
+    <string name="word_bt1">开始背单词吧</string>
+    <string name="word_bt2">试试语音背单词</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/main_buttomnav"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:menu="@menu/main_buttom_navigationview"
+        app:itemBackground="?selectableItemBackground"
+        app:labelVisibilityMode="labeled"
+        app:itemHorizontalTranslationEnabled="false"
+        android:layout_alignParentBottom="true">
+
+    </android.support.design.widget.BottomNavigationView>
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/main_buttomnav"
+        android:background="@color/white" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/content_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/div_tab_bar"
+        >
+    </android.support.v4.view.ViewPager>
+    </RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <shape android:shape="rectangle" >
+                <solid android:color="#CABBBBBB" /><!-- 阴影的颜色 -->
+                <corners android:radius="10dp" /><!-- 圆角 -->
+            </shape>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edecdc">
+
+    <FrameLayout
+        android:id="@+id/word_record"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/corner_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/text_inside1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剩余"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.15"
+                app:layout_constraintHorizontal_bias="0.15"
+
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/text_inside2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="60dp"
+                android:text="今日单词"
+                android:textSize="16sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/text_inside1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/text_inside1"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:ignore="NotSibling" />
+            <TextView
+                android:id="@+id/text_inside3"
+                android:text="265"
+                android:textColor="@color/black"
+                android:textSize="45sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/text_inside1"
+                app:layout_constraintCircle="@+id/text_inside1"
+                app:layout_constraintCircleAngle="180"
+                app:layout_constraintCircleRadius="40dp"
+                />
+            <TextView
+                android:id="@+id/text_inside4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天"
+                app:layout_constraintLeft_toRightOf="@id/text_inside3"
+                app:layout_constraintBottom_toBottomOf="@id/text_inside3"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="2dp"/>
+            <TextView
+                android:id="@+id/text_inside5"
+                android:text="15"
+                android:textColor="@color/black"
+                android:textSize="45sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/text_inside2"
+                app:layout_constraintCircle="@+id/text_inside2"
+                app:layout_constraintCircleAngle="180"
+                app:layout_constraintCircleRadius="40dp"
+                />
+            <TextView
+                android:id="@+id/text_inside6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个"
+                app:layout_constraintLeft_toRightOf="@id/text_inside2"
+                app:layout_constraintBottom_toBottomOf="@id/text_inside3"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="2dp"/>
+            <TextView
+                android:id="@+id/text_inside7"
+                android:text="六级词汇"
+                app:layout_constraintCircle="@+id/text_inside3"
+                android:textSize="16sp"
+                app:layout_constraintCircleAngle="180"
+                app:layout_constraintCircleRadius="60sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/button_inside1"
+                android:layout_width="65dp"
+                android:layout_height="20dp"
+                android:text="修改计划"
+                app:layout_constraintCircle="@+id/text_inside5"
+                android:textSize="14sp"
+                android:textColor="#757575"
+                app:layout_constraintCircleAngle="180"
+                app:layout_constraintCircleRadius="60sp"
+                android:background="@drawable/buttom_insides1" />
+            <View
+                android:id="@+id/line_word"
+                android:layout_width="0dp"
+                android:layout_height="1dip"
+                android:background="#757575"
+                app:layout_constraintTop_toBottomOf="@+id/text_inside7"
+                app:layout_constraintRight_toRightOf="@+id/text_inside6"
+                app:layout_constraintLeft_toLeftOf="@+id/text_inside3"
+                android:layout_marginTop="20dp" />
+            <TextView
+                android:id="@+id/text_inside8"
+                android:text="已学完"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@+id/line_word"
+                app:layout_constraintLeft_toLeftOf="@+id/text_inside7"
+                android:layout_marginTop="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/text_inside9"
+                android:text="216"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/line_word"
+                app:layout_constraintLeft_toRightOf="@+id/text_inside8"
+                app:layout_constraintBaseline_toBaselineOf="@+id/text_inside8"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/text_inside10"
+                android:text="/"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/line_word"
+                app:layout_constraintLeft_toRightOf="@+id/text_inside9"
+                app:layout_constraintBaseline_toBaselineOf="@+id/text_inside9"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/text_inside11"
+                android:text="3926"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/line_word"
+                app:layout_constraintLeft_toRightOf="@+id/text_inside10"
+                app:layout_constraintBaseline_toBaselineOf="@+id/text_inside9"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <me.zhouzhuo.zzhorizontalprogressbar.ZzHorizontalProgressBar
+                android:layout_width="0dp"
+                android:layout_height="18dp"
+                app:layout_constraintLeft_toLeftOf="@+id/text_inside3"
+                app:layout_constraintRight_toRightOf="@+id/text_inside6"
+                app:layout_constraintTop_toBottomOf="@+id/text_inside8"
+                android:layout_marginTop="5dp"
+                app:zpb_bg_color="@color/white"
+                app:zpb_border_color="@color/colorPrimary"
+                app:zpb_border_width="2dp"
+                app:zpb_draw_border="true"
+                app:zpb_pb_color="@color/colorPrimary"
+                app:zpb_progress="20"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="282dp" />
+        </android.support.constraint.ConstraintLayout>
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/text_item1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="8dp"
+        android:text="今日需新学"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/word_item1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/text_item2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="1dp"
+        android:text="15"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_item1"
+        app:layout_constraintBottom_toTopOf="@+id/word_item1"
+        app:layout_constraintLeft_toRightOf="@+id/text_item1" />
+
+    <TextView
+        android:id="@+id/text_item3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="1dp"
+        android:text="/"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_item1"
+        app:layout_constraintBottom_toTopOf="@+id/word_item1"
+        app:layout_constraintLeft_toRightOf="@+id/text_item2" />
+
+    <TextView
+        android:id="@+id/text_item4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="1dp"
+        android:text="15"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_item1"
+        app:layout_constraintBottom_toTopOf="@+id/word_item1"
+        app:layout_constraintLeft_toRightOf="@+id/text_item3" />
+
+    <TextView
+        android:id="@+id/text_item5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="今日需复习"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_item1"
+        app:layout_constraintBottom_toTopOf="@+id/word_item1"
+        app:layout_constraintLeft_toRightOf="@+id/text_item4" />
+
+    <TextView
+        android:id="@+id/text_item6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="1dp"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_item1"
+        app:layout_constraintBottom_toTopOf="@+id/word_item1"
+        app:layout_constraintLeft_toRightOf="@+id/text_item5" />
+
+    <Button
+        android:id="@+id/word_item1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/buttom_shape1"
+
+        android:text="@string/word_bt1"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/word_record" />
+
+    <Button
+        android:id="@+id/word_item2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/buttom_shape2"
+        android:text="@string/word_bt2"
+        android:textColor="@color/colorPrimary"
+        android:textSize="19sp"
+        app:layout_constraintTop_toBottomOf="@+id/word_record"
+        tools:ignore="MissingConstraints,UnknownIdInLayout" />
+
+
+</android.support.constraint.ConstraintLayout>
